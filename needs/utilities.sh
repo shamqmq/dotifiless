@@ -1,24 +1,31 @@
-#!/bin/bash
+#!/bin/sh
 
 # audio definition
-doas xbps-install -S alsa-pipewire libjack-pipewire pipewire alsa-utils
+doas xbps-install -Sy alsa-pipewire libjack-pipewire pipewire alsa-utils AlsaMixer.app
 echo "audio definitions have been installed"
 #internet and social media
 
-doas xbps-install -S firfox wget telegram-desktop
+doas xbps-install -Sy firefox wget telegram-desktop
 
-echo "ainternet and social media have been installed"
+echo "internet and social media have been installed"
 
 # ricing 
-doas xbps-install -S pywal feh picom xrdb xdo xdotool setxkbmap
+doas xbps-install -Sy pywal feh picom xrdb xdo xdotool setxkbmap
 
 echo "ricing have been installed"
 
 #utilites
-doas xbps-install -S sxhkd htop fzf fd zsh 
+doas xbps-install -Sy sxhkd htop fzf fd zsh ranger 
 
 echo "utilites have been installed"
 #media playing , downloading and manipulating
  
-doas xbps-install -S mpv sxiv ueberzug yt-dlp ffmpeg atomicparsley gimp mypaint zathura zathura-pdf-mupdf
+doas xbps-install -Sy mpv sxiv ueberzug yt-dlp ffmpeg atomicparsley gimp mypaint zathura zathura-pdf-mupdf scrot
 echo "media playing , downloading and manipulating have been installed"
+
+
+# internet
+doas xbps-install -Sy NetworkManager
+doas unlink /var/service/wpa_supplicant
+doas ln -s /etc/sv/NetworkManager /var/service
+doas ln -s /etc/sv/dbus /var/service
