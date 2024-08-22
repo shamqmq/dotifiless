@@ -1,15 +1,16 @@
-[] audio fix and cards definition
+[*] audio fix and cards definition
 [*] slstatus  and its configs
 [*] ranger download and configure
+[*] internrt connection
 [] mpv config
 [] zsh configure and dwonloading
-[] git learning
+[*] git learning
 [] neovim configs
 [] scripts:
   []    mounting
-  []    screanshot
-  []    openning video in terminal with url
-  []    volume manipulatin
+  [*]    screanshot
+  [*]    openning video in terminal with url
+  [*]    volume manipulatin
 
 [*] image editing [my paint]
 [*] pdf [zathura]

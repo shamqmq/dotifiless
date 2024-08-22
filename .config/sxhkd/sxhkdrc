@@ -1,0 +1,29 @@
+super + Return
+	st
+super + s
+	scpad
+super + w
+	firefox
+
+super + shift + E
+	~/.local/scripts/exit.sh
+super + t
+	telegram-desktop
+super + r
+	st -e ranger
+super + shift + G
+	gimp
+super + a
+	mypaint
+super + {equal, minus, BackSpace}
+	~/.local/scripts/vol.sh {up, down, toggle}
+super + c
+	screenshot
+super + shift + C
+	screenshot select
+super + control + c
+	screenshot window
+super + g
+	lutris
+super + shift + P
+	mpv $(xclip -o)
