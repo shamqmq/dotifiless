@@ -6,8 +6,8 @@
 [] zsh configure and dwonloading
 [*] git learning
 [] neovim configs
-[] scripts:
-  []    mounting
+[*] scripts:
+  [*]    mounting, unmounting and ejection external disks
   [*]    screanshot
   [*]    openning video in terminal with url
   [*]    volume manipulatin

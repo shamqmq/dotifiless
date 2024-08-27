@@ -15,7 +15,7 @@ doas xbps-install -Sy pywal feh picom xrdb xdo xdotool setxkbmap
 echo "ricing have been installed"
 
 #utilites
-doas xbps-install -Sy sxhkd htop fzf fd zsh ranger 
+doas xbps-install -Sy sxhkd htop fzf fd zsh ranger ntfs-3g
 
 echo "utilites have been installed"
 #media playing , downloading and manipulating
