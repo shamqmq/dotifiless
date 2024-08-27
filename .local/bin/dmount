@@ -1,0 +1,15 @@
+
+#!/bin/sh
+
+# Get a list of mountable partitions, excluding /dev/sda
+mountable=$(lsblk -lp | grep "part $" | grep -v "/dev/sda" | awk '{print $1, "(" $4 ")"}')
+[[ -z "$mountable" ]] && exit 1  # Exit if no mountable partitions found
+
+# Choose a partition to mount
+chosen=$(echo "$mountable" | dmenu -i -p "Mount which drive?" | awk '{print $1}')
+[[ -z "$chosen" ]] && exit 1  # Exit if no drive was chosen
+
+dirs=$(find /mnt /home -type d -maxdepth 3 2>/dev/null)
+mountpoint=$(echo "$dirs" | dmenu -i -p "Which mount point?")
+[[ -z "$mountpoint" ]] && exit 1  # Exit if no mount point was chosen
+doas mount "$chosen" "$mountpoint" || { echo "Failed to mount"; exit 1; }  # Error handling

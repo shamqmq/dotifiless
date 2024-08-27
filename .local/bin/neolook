@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+wall =$(find ~/pix -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
+
+feh --bg-fill ~/pix/$wall
+
+picom -b &
+
+wal -c
+wal -i ~/pix/$wall
+#dwm wal
+xdotool key super+F5
