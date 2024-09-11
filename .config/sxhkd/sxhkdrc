@@ -23,7 +23,9 @@ super + shift + C
 	screenshot select
 super + control + c
 	screenshot window
-super + g
-	lutris
 super + shift + P
 	mpv $(xclip -o)
+super + m
+	dmount
+super + control + m
+	dumount

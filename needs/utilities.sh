@@ -10,7 +10,7 @@ doas xbps-install -Sy firefox wget telegram-desktop
 echo "internet and social media have been installed"
 
 # ricing 
-doas xbps-install -Sy pywal feh picom xrdb xdo xdotool setxkbmap
+doas xbps-install -Sy pywal feh picom xrdb xdo xdotool setxkbmap nerd-fonts-symbols-ttf noto-fonts-ttf noto-fonts-ttf-extra
 
 echo "ricing have been installed"
 
