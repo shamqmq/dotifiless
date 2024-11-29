@@ -15,7 +15,7 @@ doas xbps-install -Sy pywal feh picom xrdb xdo xdotool setxkbmap nerd-fonts-symb
 echo "ricing have been installed"
 
 #utilites
-doas xbps-install -Sy sxhkd htop fzf fd zsh ranger ntfs-3g ufw
+doas xbps-install -Sy sxhkd htop fzf fd thunar zsh ranger ntfs-3g ufw
 doas ufw enable
 
 echo "utilites have been installed"
