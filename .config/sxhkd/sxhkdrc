@@ -4,7 +4,8 @@ super + s
 	scpad
 super + w
 	firefox
-
+super + d
+	~/src/Discord/Discord
 super + shift + E
 	~/.local/scripts/exit.sh
 super + t
