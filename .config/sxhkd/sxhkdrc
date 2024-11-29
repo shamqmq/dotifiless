@@ -11,6 +11,8 @@ super + t
 	telegram-desktop
 super + r
 	st -e ranger
+super + shift + R
+	thunar
 super + shift + G
 	gimp
 super + a
