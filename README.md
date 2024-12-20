@@ -7,9 +7,9 @@ my dotfiles :)
 - [x] audio fix and cards definition
 - [x] slstatus  and its configs
 - [x] ranger download and configure
-- [x] internrt connection
+- [x] internet connection
 - [x] mpv config
-- [] zsh configure and downloading
+- [ ] zsh configure and downloading
 - [x] neovim configs
 - [x] scripts:
   - [x]    mounting, unmounting and ejection external disks
